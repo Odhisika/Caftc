@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="630.0" prefWidth="580.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.caftc.PhysicalAppearance">
+   <children>
+      <BorderPane layoutY="-1.0" prefHeight="630.0" prefWidth="580.0">
+         <right>
+            <AnchorPane prefHeight="630.0" prefWidth="310.0" style="-fx-background-color: #792222;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="22.0" layoutY="166.0" />
+                  <Label layoutX="32.0" layoutY="175.0" prefHeight="45.0" prefWidth="248.0" text="If married complete the following :" textFill="#fcfcfc">
+                     <font>
+                        <Font name="Vivaldi Italic" size="22.0" />
+                     </font></Label>
+                  <TextArea fx:id="ta_NameChildren" layoutX="27.0" layoutY="352.0" prefHeight="156.0" prefWidth="284.0" promptText="Names Of children " style="-fx-border-color: red;" />
+                  <TextField fx:id="tfd_NChildren" layoutX="30.0" layoutY="310.0" prefHeight="27.0" prefWidth="284.0" promptText="Number of Children" style="-fx-border-color: red;" />
+                  <TextField fx:id="tfd_CoupleName" layoutX="27.0" layoutY="251.0" prefHeight="27.0" prefWidth="284.0" promptText="Couples Name " style="-fx-border-color: red;" />
+                  <Button fx:id="Btn_Next" layoutX="20.0" layoutY="576.0" mnemonicParsing="false" onAction="#toNext" prefHeight="40.0" prefWidth="291.0" style="-fx-border-color: red; -fx-background-color: yellow;" text="Next ">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </right>
+         <left>
+            <AnchorPane prefHeight="630.0" prefWidth="288.0" style="-fx-background-color: #792222;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="17.0" layoutY="352.0" text="Gender :" />
+                  <TextField fx:id="tfd_Email" layoutX="20.0" layoutY="476.0" prefHeight="27.0" prefWidth="277.0" promptText="Email" style="-fx-border-color: red;" />
+                  <TextField fx:id="tfd_Telephone" layoutX="19.0" layoutY="428.0" prefHeight="27.0" prefWidth="279.0" promptText="Telephone Number " style="-fx-border-color: red;" />
+                  <RadioButton fx:id="Rb_Male" layoutX="79.0" layoutY="352.0" mnemonicParsing="false" text="Male ">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="DamnGroup" />
+                     </toggleGroup></RadioButton>
+                  <RadioButton fx:id="Rb_Female" layoutX="177.0" layoutY="344.0" mnemonicParsing="false" text="Female" toggleGroup="$DamnGroup" />
+                  <TextField fx:id="tfd_AnySickness" layoutX="16.0" layoutY="302.0" prefHeight="27.0" prefWidth="284.0" promptText="Verify if any Sickness" style="-fx-border-color: red;" />
+                  <TextField fx:id="tfd_Healthcare" layoutX="15.0" layoutY="209.0" prefHeight="27.0" prefWidth="286.0" promptText="Healthcare " style="-fx-border-color: red;" />
+                  <TextField fx:id="tfd_appearance" layoutX="16.0" layoutY="254.0" prefHeight="27.0" prefWidth="285.0" promptText="Apperance " style="-fx-border-color: red;" />
+                  <ComboBox fx:id="cmb_MaritalStatus" layoutX="18.0" layoutY="384.0" prefHeight="25.0" prefWidth="280.0" promptText="Marital Status" />
+                  <Button fx:id="Btn_Back" layoutX="11.0" layoutY="576.0" mnemonicParsing="false" onAction="#toBack" prefHeight="40.0" prefWidth="264.0" style="-fx-border-color: red; -fx-background-color: red;" text="Back">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Button>
+                  <Label fx:id="lb_View" layoutX="79.0" layoutY="130.0" />
+                  <Label fx:id="lb_message" layoutX="186.0" layoutY="396.0" prefHeight="17.0" prefWidth="41.0" />
+               </children>
+            </AnchorPane>
+         </left>
+      </BorderPane>
+      <AnchorPane prefHeight="78.0" prefWidth="620.0" style="-fx-background-color: white; -fx-border-color: red;">
+         <children>
+            <Label layoutX="122.0" layoutY="19.0" text="PHYSICAL APPEARANCE " textFill="#bf1717">
+               <font>
+                  <Font name="Bell MT Bold" size="33.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

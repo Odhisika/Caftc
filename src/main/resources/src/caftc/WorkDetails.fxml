@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="450.0" style="-fx-background-color: #792222;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.caftc.WorkDetails">
+   <children>
+      <TextField fx:id="tfd_wrkOccupation" layoutX="47.0" layoutY="306.0" prefHeight="27.0" prefWidth="345.0" promptText="Occupation " style="-fx-border-color: red; -fx-border-radius: 100;" />
+      <TextField fx:id="tfd_WorkExperience" layoutX="47.0" layoutY="353.0" prefHeight="27.0" prefWidth="345.0" promptText="Working Experience " style="-fx-border-color: red; -fx-border-radius: 100;" />
+      <TextField fx:id="tfd_NofWork" layoutX="47.0" layoutY="196.0" prefHeight="27.0" prefWidth="345.0" promptText="Name of Work" style="-fx-border-color: red; -fx-border-radius: 100;" />
+      <TextField fx:id="tfd_Lofwork" layoutX="47.0" layoutY="233.0" prefHeight="27.0" prefWidth="345.0" promptText="Location" style="-fx-border-color: red; -fx-border-radius: 100;" />
+      <TextField fx:id="tfd_positWork" layoutX="47.0" layoutY="269.0" prefHeight="27.0" prefWidth="345.0" promptText="Position at Work" style="-fx-border-color: red; -fx-border-radius: 100;" />
+      <Button fx:id="Btn_Next" layoutX="47.0" layoutY="414.0" mnemonicParsing="false" onAction="#toNext" prefHeight="27.0" prefWidth="345.0" style="-fx-border-radius: 100; -fx-background-color: yellow;" text="Next" />
+      <Label layoutX="84.0" layoutY="107.0" prefHeight="32.0" prefWidth="253.0" text="Enter the details below correctly " textFill="#eeeeee">fx:controller="src.caftc.WorkDetails">
+         <font>
+            <Font name="Vivaldi Italic" size="23.0" />
+         </font>
+      </Label>
+      <Button fx:id="Btn_Back" layoutX="45.0" layoutY="454.0" mnemonicParsing="false" onAction="#toBack" prefHeight="32.0" prefWidth="345.0" style="-fx-border-radius: 80; -fx-background-color: red; -fx-border-color: red;" text="Back " textFill="#404617" />
+      <TextField fx:id="tfd_LifeOccupation" layoutX="47.0" layoutY="156.0" prefHeight="27.0" prefWidth="345.0" promptText="Life Occupation" style="-fx-border-color: red; -fx-border-radius: 100;" />
+      <Label fx:id="lb_View" layoutX="117.0" layoutY="99.0" />
+      <AnchorPane layoutX="-4.0" layoutY="-2.0" prefHeight="75.0" prefWidth="456.0" style="-fx-background-color: white; -fx-border-color: red;">
+         <children>
+            <Label layoutX="88.0" layoutY="18.0" prefHeight="40.0" prefWidth="328.0" text="WORK DETAILS " textFill="#c23904">
+               <font>
+                  <Font name="Bell MT" size="34.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

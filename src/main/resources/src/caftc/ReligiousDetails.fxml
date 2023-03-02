@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="600.0" style="-fx-background-color: #792222;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.caftc.ReligiousDetails">
+   <children>
+      <Label layoutX="-86.0" layoutY="40.0" text="Label" />
+      <Label layoutX="62.0" layoutY="330.0" style="-fx-border-color: red;" text="Batptized Christian :" textFill="#ebe4e4">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Label>
+      <TextField fx:id="tfd_RfLeaving" layoutX="62.0" layoutY="193.0" prefHeight="27.0" prefWidth="462.0" promptText="Reasons For Leaving" style="-fx-border-color: red;" />
+      <TextField fx:id="tfd_YiPrevChurch" layoutX="62.0" layoutY="261.0" prefHeight="27.0" prefWidth="462.0" promptText="Years In Worship with the previous church " style="-fx-border-color: red;" />
+      <TextField fx:id="tfd_ChBap" layoutX="62.0" layoutY="352.0" prefHeight="27.0" prefWidth="462.0" promptText="Year Baptized in Previous church " style="-fx-border-color: red;" />
+      <TextField fx:id="tfd_B_Dob" layoutX="62.0" layoutY="386.0" prefHeight="27.0" prefWidth="462.0" promptText="Date Baptized " style="-fx-border-color: red;" />
+      <TextField fx:id="tfd_CuChName" layoutX="62.0" layoutY="421.0" prefHeight="27.0" prefWidth="462.0" promptText="Name  of Current Church " style="-fx-border-color: red;" />
+      <TextField fx:id="tfd_CuPasName" layoutX="62.0" layoutY="460.0" prefHeight="27.0" prefWidth="462.0" promptText="Name of Current Pastor " style="-fx-border-color: red;" />
+      <TextField fx:id="tfd_OldNfPastor" layoutX="62.0" layoutY="294.0" prefHeight="27.0" prefWidth="462.0" promptText="Name Of Pastor " style="-fx-border-color: red;" />
+      <TextField fx:id="tfd_NfLchurch" layoutX="62.0" layoutY="226.0" prefHeight="27.0" prefWidth="462.0" promptText="Name of last Church Attended " style="-fx-border-color: red;" />
+      <TextField fx:id="tfd_noChAttended" layoutX="62.0" layoutY="159.0" prefHeight="27.0" prefWidth="462.0" promptText="Number of Churches Attended " style="-fx-border-color: red;" />
+      <TextField fx:id="tfd_IFOreligious" layoutX="62.0" layoutY="126.0" prefHeight="27.0" prefWidth="462.0" promptText="If From Any Other Religious Religion to Christianity" style="-fx-border-color: red;" />
+      <ComboBox fx:id="cmd_ReligConversion" layoutX="62.0" layoutY="90.0" prefHeight="27.0" prefWidth="462.0" promptText="Religious conversion" style="-fx-border-color: red;">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></ComboBox>
+      <RadioButton fx:id="Rb_B_Yes" layoutX="206.0" layoutY="327.0" mnemonicParsing="false" onAction="#RadioSelect" prefHeight="27.0" prefWidth="66.0" text="Yes " textFill="#f2f2f2">
+         <font>
+            <Font size="11.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="Onegroup" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="Rb_B_No" layoutX="314.0" layoutY="333.0" mnemonicParsing="false" onAction="#RadioSelect" text="No" textFill="#f2f2f2" toggleGroup="$Onegroup">
+         <font>
+            <Font size="11.0" />
+         </font></RadioButton>
+      <Button fx:id="Btn_Back" layoutX="-1.0" layoutY="553.0" mnemonicParsing="false" onAction="#toBack" prefHeight="39.0" prefWidth="600.0" style="-fx-background-color: red; -fx-border-color: white;" text="Back" textFill="#2c0808">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Button fx:id="Btn_Submit" layoutX="-1.0" layoutY="507.0" mnemonicParsing="false" onAction="#toSubmit" prefHeight="39.0" prefWidth="600.0" style="-fx-background-color: yellow; -fx-border-color: white;" text="Submit ">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor></Button>
+      <Label fx:id="lb_message" layoutX="430.0" layoutY="330.0" prefHeight="17.0" prefWidth="39.0" />
+      <Label fx:id="lb_View" layoutX="81.0" layoutY="473.0" />
+      <AnchorPane prefHeight="59.0" prefWidth="600.0" style="-fx-background-color: white; -fx-border-color: red;">
+         <children>
+            <Label layoutX="114.0" layoutY="11.0" prefHeight="39.0" prefWidth="357.0" text="RELIGIOIUS DETAILS" textFill="#b51313">
+               <font>
+                  <Font name="Bell MT" size="33.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

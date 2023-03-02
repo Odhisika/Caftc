@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="400.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.caftc.Cellgroups">
+   <children>
+      <BorderPane prefHeight="400.0" prefWidth="400.0">
+         <top>
+            <AnchorPane prefHeight="77.0" prefWidth="400.0" style="-fx-background-color: white; -fx-border-color: red;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="120.0" layoutY="21.0" text="Cell Groups " textFill="#a83131">
+                     <font>
+                        <Font name="Arial Bold" size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </top>
+         <center>
+            <AnchorPane prefHeight="323.0" prefWidth="406.0" style="-fx-background-color: #792222;" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="78.0" layoutY="14.0" text="Youth Association" textFill="WHITE">
+                     <font>
+                        <Font size="33.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="83.0" layoutY="105.0" text="Women Ministry " textFill="WHITE">
+                     <font>
+                        <Font size="33.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="92.0" layoutY="213.0" text="Men Ministry " textFill="WHITE">
+                     <font>
+                        <Font size="33.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="141.0" layoutY="63.0" text="Monday 6pm -8pm" textAlignment="CENTER" textFill="WHITE" />
+                  <Label layoutX="135.0" layoutY="153.0" text="Tuesday 6pm -8pm " textAlignment="CENTER" textFill="WHITE" />
+                  <Label layoutX="135.0" layoutY="262.0" text="Thursday 6pm - 8pm" textAlignment="CENTER" textFill="WHITE" />
+                  <Button fx:id="Btn_Exit" layoutX="318.0" layoutY="279.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="57.0" style="-fx-border-color: red; -fx-border-radius: 100;" styleClass="shadow" text="Exit " />
+               </children>
+            </AnchorPane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>
